@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairtrading</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class=" bg-gray-700 text-white text-center">
+    <div class="grid md:grid-rows-14  relative min-w-min " > <!--App screen-->
+
+        <div class=" row-span-14 min-h-screen overflow-auto   grid grid-cols-14 border-white border"> <!--Above footer-->
+
+            <nav class="col-span-1 border-white border hidden md:block">nav  bar </nav>
+            <main class="col-span-14 md:col-span-13 grid grid-rows-10"> <!--Main Content-->
+                <div class="grid grid-rows-2">
+                    <div class="row-span-1">Top Bar</div>
+                    <div class="row-span-1">Ticker Tape</div>
+                </div>
+                <div class="row-span-9 border border-white grid grid-cols-5">
+                    <div class="col-span-1">
+                        Left Gutter
+                    </div>    
+                    <div class="col-span-4 lg:col-span-3 border border-white">
+                        Center Panel
+                    </div>
+                    <div class="hidden lg:block lg:col-span-1 ">
+                        Right gutter
+                    </div>
+                </div>
+                
+            </main>
+
+        </div>
+
+        <div class=" h-80 lg:hidden border border-white ">
+            Right gutter
+        </div>
+
+
+        <footer class="hidden md:block row-span-1  absolute bottom-0 w-full bg-red-300"> footer </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
